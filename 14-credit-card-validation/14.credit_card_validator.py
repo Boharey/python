@@ -17,17 +17,13 @@ def credit_card_validator(number: str) -> bool:
       digit = digit * 2
       # Subtract 9 if the doubled value is greater than 9
       if digit > 9:
-        digit -= 9
-        
+        digit -= 9     
     sum += digit
-    i += 1
-    
-  print(sum)
-    
+    i += 1 
+  print(sum)   
   if sum%10 == 0:
     return True
   else:
     return False
-
 
 print(credit_card_validator('1234-5678-9012-3456'))
