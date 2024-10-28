@@ -27,3 +27,4 @@ def credit_card_validator(number: str) -> bool:
     return False
 
 print(credit_card_validator('1234-5678-9012-3456'))
+print(credit_card_validator('asdf1343514g434'))
