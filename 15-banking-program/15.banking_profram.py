@@ -1,5 +1,4 @@
 #banking program
-
 is_running: bool = True
 balance: float = 0.0
 
@@ -47,7 +46,6 @@ def handle_case(val) -> None:
     case _:
       print("\ninvalid case: please check your value once again\n")
       
-
 while is_running == True:
   print("Banking Program")
   print("1. Show Balance")
