@@ -17,7 +17,6 @@ class Book:
     def return_book(self) -> None:
         self.available = True  # Set the book as available
 
-
 class Student:
     def __init__(self, name: str, student_id: str):
         self.name = name  # Name of the student
@@ -46,7 +45,6 @@ class Student:
         else:
             for book in self.books_borrowed:
                 print(f"- {book.title}")
-
 
 # Main section
 if __name__ == "__main__":
