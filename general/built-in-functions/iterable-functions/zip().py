@@ -64,3 +64,14 @@ def use_zip_to_unzip() -> None:
   print(r1,r2,r3,sep="\n")
 
 use_zip_to_unzip()
+
+
+##important part 
+from itertools import zip_longest
+def overWriteBuiltinPropertYofzip() -> None:
+  list1 = [1, 2, 3]
+  list2 = ['a', 'b']
+  combined = list(zip_longest(list1, list2, fillvalue=None))
+  print(combined)  # Output: [(1, 'a'), (2, 'b'), (3, None)]
+
+print()

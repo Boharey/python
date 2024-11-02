@@ -17,7 +17,7 @@ b1 = Book(pages = 300)
 print(len(b1))
 
 class Bike():
-  def __init__(self,cost: int,company: str = "unnamed")-> None:
+  def __init__(self,cost: int,company: str = "unnamed") -> None:
     self.company = company
     self.price = cost # in thousands(K)
   
