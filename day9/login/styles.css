@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  perspective: 1000px; /* Adds perspective to the 3D effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.login-form {
+  margin : 30px 0px;
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.1s; /* Smooth transformation */
+
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form input[type="submit"].login {
+  background-color: #007bff;
+}
+
+.login-form input[type="submit"].signup {
+  background-color: #28a745;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.login-form p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-form .signup-link,
+.login-form .login-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-form .signup-link:hover,
+.login-form .login-link:hover {
+  text-decoration: underline;
+}
+
+.login-form .login-via {
+  margin-top: 15px;
+  color: #666;
+  font-size: 14px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.social-login a {
+  flex: 1;
+  text-align: center;
+  margin: 0 5px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 15px 0px;
+  transition: 0.3s ease;
+}
+
+.social-login a:hover {
+  filter: brightness(0.5);
+}
+
+.google { background-color: #db4437; }
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #1da1f2; }
+.github { background-color: #333; }
