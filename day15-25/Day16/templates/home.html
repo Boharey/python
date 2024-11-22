@@ -9,7 +9,7 @@
     <h1>Welcome to the Home Page!</h1>
     
     <!-- Link to greet Alice -->
-    <p><a href="{{ url_for('greet', name='Alice',age = 14) }}">Greet {{name}}</a></p>
+    <p><a href="{{ url_for('greet', name='Alice', age=14) }}">Greet Alice</a></p>
     
     <!-- Link to the About Page -->
     <p><a href="{{ url_for('about') }}">Go to the About Page</a></p>
@@ -18,7 +18,7 @@
     <p><a href="{{ url_for('search', query='Flask tutorials') }}">Search for Flask tutorials</a></p>
     
     <!-- Link to Product page with dynamic category and product_id -->
-    <p><a href="{{ url_for('product', category='electronics', product_id=42) }}">View Product_id : {{product_id}} in category : {Electronics}</a></p>
+    <p><a href="{{ url_for('product', category='electronics', product_id=42) }}">View Product ID: 42 in category: Electronics</a></p>
     
     <!-- Link to Static Demo (using static files) -->
     <p><a href="{{ url_for('static_demo') }}">Go to Static Demo</a></p>
